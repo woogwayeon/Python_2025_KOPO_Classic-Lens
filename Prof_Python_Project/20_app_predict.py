@@ -18,7 +18,7 @@ def dispPhoto(path):
 
     numImage = np.asarray(grayImage, dtype=float)
     numImage = np.floor(16 - 16 * (numImage / 256))
-    numImage = numImage.flatten()
+    numImage = numImage.flatten() # 데이터를 펼쳐서(?) 학습
 
     return numImage
 
@@ -30,7 +30,7 @@ def predictDigits(data):
     clf.fit(digits.data, digits.target) # 피팅
 
     n = clf.predict([data])
-    print("예측 = ", n)
+    print("예측 =", n)
     textLabel.configure(text="이 그림은"+str(n)+"입니다!")
 
 
@@ -53,3 +53,7 @@ textLabel = tk.Label(text = "손글씨 숫자를 인식합니다")
 textLabel.pack()
 
 tk.mainloop()
+
+
+
+# 지금은 keras 라고 저장하는데 책에는 조금 다르게 나와있을 수 있음

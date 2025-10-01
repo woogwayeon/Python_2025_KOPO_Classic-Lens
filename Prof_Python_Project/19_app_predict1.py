@@ -16,28 +16,11 @@ def dispPhoto(path):
     imageLabel.configure(image = dispImage)
     imageLabel.image = dispImage
 
-    numImage = np.asarray(grayImage, dtype=float)
-    numImage = np.floor(16 - 16 * (numImage / 256))
-    numImage = numImage.flatten()
-
-    return numImage
-
-
-def predictDigits(data):
-    # 16, 17, 18행이 모델링하는 과정
-    digits = sklearn.datasets.load_digits()
-    clf=sklearn.svm.SVC(gamma=0.001)
-    clf.fit(digits.data, digits.target) # 피팅
-    n = clf.predict([data])
-    print("예측 = ", n)
-    textLabel.configure(text="이 그림은"+str(n)+"입니다!")
-
 
 def openFile():
     fpath = pd.askopenfilename()
     if fpath:
         data = dispPhoto(fpath)
-        predictDigits(data)
 
 root = tk.Tk()
 root.geometry("400x400")
@@ -47,8 +30,5 @@ imageLabel=tk.Label()
 
 btn.pack()
 imageLabel.pack()
-
-textLabel = tk.Label(text = "손글씨 숫자를 인식합니다")
-textLabel.pack()
 
 tk.mainloop()
