@@ -9,7 +9,7 @@ Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제
 <br />
 <br />
 
----
+
 
 ## 📘 프로젝트 개요
 
@@ -19,7 +19,7 @@ Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제
 <br />
 <br />
 <br />
----
+
 
 ## 🎯 프로젝트 목표
 
@@ -28,7 +28,6 @@ Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제
 <br />
 <br />
 <br />
----
 
 ## ⚙️ 파트별 상세 설명
 <br />
@@ -47,21 +46,21 @@ Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제
   - 선택한 악보 이미지와 예측된 시대명, 대표 작곡가를 한글로 표시  
   - **Google 연계 검색 버튼**으로 시대 관련 정보를 바로 탐색 가능  
 <br /><br />
----
+
 
 ### 🧩 Data Processing
 - 업로드된 이미지를 흑백 변환 후 8×8 크기로 리사이즈  
 - 픽셀값을 0~16 범위로 정규화하여 **SVM 입력용 벡터로 변환**  
 - 학습된 모델은 `joblib`으로 저장되어, GUI 실행 시 즉시 예측 가능  
 <br /><br /><br />
----
+
 
 ## 📁 학습데이터 다운로드
 
 악보 데이터 : https://naver.me/FK0MemlU<br/>
 배경 클래식 mp3 file : https://naver.me/5lfzW9fm
 <br /><br /><br />
----
+
 
 ## 🔄 전체 플로우차트
 
@@ -72,15 +71,15 @@ Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제
 5. GUI 창에서 예측 결과, 시대 설명, 대표 작곡가를 표시  
 6. **Google 검색 버튼**을 통해 추가 정보 탐색 가능  
 <br /><br /><br />
----
+
 
 ## 🎨 UI 이미지
 
 | 초기 실행 화면 | 예측 결과 화면 |
 |----------------|----------------|
 | ![초기 실행 화면](./images/gui01.png)| ![예측 결과 화면](./images/gui02.png) |
-<br /><br /><br />
----
+
+
 
 ## 🧩 사용 기술 스택
 
@@ -92,7 +91,7 @@ Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제
 | Data | IMSLP 악보 이미지 |
 | Visualization | matplotlib |
 <br /><br /><br />
----
+
 
 ## 🧠 학습 모델 정보
 
@@ -100,7 +99,7 @@ Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제
 - 모델: `SVC(kernel='rbf', gamma='scale', C=1.0)`  
 - 결과 저장: `svm_image_era.pkl`  
 <br /><br /><br />
----
+
 
 ## 👩‍💻 개발자
 
@@ -108,7 +107,6 @@ Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제
 - E-mail: [woogwayeon@gmail.com](mailto:woogwayeon@gmail.com)  
 - GitHub: [https://github.com/woogwayeon](https://github.com/woogwayeon)  
 <br /><br /><br />
----
 
 > 📍 본 프로젝트는 Python 기반의 AI 음악 분석 도구로,  
 > 이미지 인식과 머신러닝의 융합을 통해 악보로부터 시대를 예측하는  
