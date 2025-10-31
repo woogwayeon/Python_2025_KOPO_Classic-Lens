@@ -49,7 +49,7 @@ Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제
 
 ## 📁 학습데이터 다운로드
 
-악보 데이터 : https://naver.me/FK0MemlU
+악보 데이터 : https://naver.me/FK0MemlU<br/>
 배경 클래식 mp3 file : https://naver.me/5lfzW9fm
 
 ---
