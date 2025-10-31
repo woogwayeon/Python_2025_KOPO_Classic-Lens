@@ -116,4 +116,8 @@ Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제
 📍 본 프로젝트는 Python 기반의 AI 음악 분석 도구로,  
 이미지 인식과 머신러닝의 융합을 통해 악보로부터 시대를 예측하는  
 실험적이고 창의적인 접근을 목표로 합니다.
-<br /><br /><br /><br /><br /><br />
+<br /><br /><br />
+
+## 🧾 License
+
+© 2025. woogwayeon. All Rights Reserved.
