@@ -95,6 +95,7 @@ Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제
 | GUI | Tkinter, PIL (Pillow) |
 | Data | IMSLP 악보 이미지 |
 | Visualization | matplotlib |
+
 <br /><br /><br />
 
 
