@@ -26,6 +26,7 @@ def open_image():
         title="Select Image",
         filetypes=(("Image Files", "*.png;*.jpg;*.jpeg"),)
     )
+    
     if not file_path:
         return
 

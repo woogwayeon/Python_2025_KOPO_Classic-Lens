@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
-from sklearn.metrics import classification_report, accuracy_score
+from sklearn.metrics import classification_report, accuracy_score # 전체 예측 중 올바르게 예측한 비율을 계산 및 출력
 import joblib
 
 # 경로 설정
@@ -17,7 +17,7 @@ def load_images():
     labels = []
     for era in os.listdir(DATASET_DIR):   # 시대별 폴더(era) 를 하나씩 읽는다
         
-        era_path = os.path.join(DATASET_DIR, era)
+        era_path = os.path.join(DATASET_DIR, era) # 파일 경로를 안전하게 생성(운영체제 호환성)
         
         if not os.path.isdir(era_path):  # 폴더만 처리 isdir()
             continue

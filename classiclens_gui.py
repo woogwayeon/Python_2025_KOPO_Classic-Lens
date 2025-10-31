@@ -5,14 +5,14 @@ from PIL import Image, ImageTk
 import numpy as np
 import joblib
 
-# ===== 경로 설정 =====
+# 경로 설정
 MODEL_PATH = "./models/svm_image_era.pkl"
 
-# ===== 모델 로드 =====
+# 모델 로드
 model = joblib.load(MODEL_PATH)
 eras = ["renaissance", "baroque", "classical", "romantic", "modern"]
 
-# ===== 예측 함수 =====
+# 예측 함수
 def predict_image(path):
     img = Image.open(path).convert("L").resize((64, 64))
     arr = np.array(img).flatten() / 255.0
@@ -21,7 +21,7 @@ def predict_image(path):
     confidence = np.max(prob) * 100
     return pred, confidence
 
-# ===== 이미지 선택 함수 =====
+# 이미지 선택
 def open_image():
     file_path = filedialog.askopenfilename(
         title="Select Image",
@@ -41,7 +41,8 @@ def open_image():
     pred, conf = predict_image(file_path)
     result_label.config(text=f"{pred} 시대의 곡으로 ({conf:.1f}% 예측되었습니다)")
 
-# ===== GUI 구성 =====
+
+# GUI
 root = tk.Tk()
 root.title("ClassicLens")
 root.geometry("500x500")
