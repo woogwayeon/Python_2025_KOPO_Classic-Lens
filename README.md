@@ -3,7 +3,7 @@
 # 🎼 ClassicLens
 
 악보 이미지를 기반으로 음악의 시대를 분류하는 AI 분석 도구입니다.  
-SVM(Support Vector Machine) 모델을 이용하여 르네상스, 바로크, 고전, 낭만, 근대 다섯 시대를 예측하며,  
+SVM(Support Vector Machine) 모델을 이용하여 [르네상스, 바로크, 고전, 낭만, 근대] 총 다섯 시대를 예측하며,  
 Tkinter GUI를 통해 결과와 함께 대표 작곡가 및 시대 설명을 제공합니다.
 <br />
 <br />
